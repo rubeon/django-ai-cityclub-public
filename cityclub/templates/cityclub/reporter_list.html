@@ -1,6 +1,6 @@
-&lt;h1&gt;Reporters&lt;/h1&gt;
-&lt;ul&gt;
+<h1>Reporters</h1>
+<ul>
 {% for reporter in object_list %}
-  &lt;li&gt;&lt;a href="{% url 'reporter-detail' reporter.pk %}"&gt;{{ reporter.name }}&lt;/a&gt;&lt;/li&gt;
+  <li><a href="{% url 'reporter-detail' reporter.pk %}">{{ reporter.name }}</a></li>
 {% endfor %}
-&lt;/ul&gt;
+</ul>

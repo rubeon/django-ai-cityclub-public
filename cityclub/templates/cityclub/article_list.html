@@ -1,6 +1,6 @@
-&lt;h1&gt;Articles&lt;/h1&gt;
-&lt;ul&gt;
+<h1>Articles</h1>
+<ul>
 {% for article in object_list %}
-  &lt;li&gt;&lt;a href="{% url 'article-detail' article.pk %}"&gt;{{ article.title }} ({{ article.pub_date }})&lt;/a&gt; by {{ article.reporter.name }}&lt;/li&gt;
+  <li><a href="{% url 'article-detail' article.pk %}">{{ article.title }} ({{ article.pub_date }})</a> by {{ article.reporter.name }}</li>
 {% endfor %}
-&lt;/ul&gt;
+</ul>
