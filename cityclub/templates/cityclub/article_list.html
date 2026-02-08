@@ -1,0 +1,6 @@
+&lt;h1&gt;Articles&lt;/h1&gt;
+&lt;ul&gt;
+{% for article in object_list %}
+  &lt;li&gt;&lt;a href="{% url 'article-detail' article.pk %}"&gt;{{ article.title }} ({{ article.pub_date }})&lt;/a&gt; by {{ article.reporter.name }}&lt;/li&gt;
+{% endfor %}
+&lt;/ul&gt;

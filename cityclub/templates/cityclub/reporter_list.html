@@ -1,0 +1,6 @@
+&lt;h1&gt;Reporters&lt;/h1&gt;
+&lt;ul&gt;
+{% for reporter in object_list %}
+  &lt;li&gt;&lt;a href="{% url 'reporter-detail' reporter.pk %}"&gt;{{ reporter.name }}&lt;/a&gt;&lt;/li&gt;
+{% endfor %}
+&lt;/ul&gt;
