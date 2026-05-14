@@ -5,6 +5,8 @@ class Reporter(models.Model):
     backend = models.CharField(max_length=50, choices=[('grok', 'Grok'), ('chatgpt', 'ChatGPT'), ('other', 'Other')])  # AI backend
     personality = models.TextField()  # Description of personality
     political_leaning = models.CharField(max_length=50, choices=[('left', 'Left'), ('center', 'Center'), ('right', 'Right'), ('neutral', 'Neutral')])  # Political bias
+    beat = models.CharField(max_length=100)
+    city = models.CharField(max_length=100)
     api_key = models.CharField(max_length=200, blank=True)  # Optional API key for backend
     created_at = models.DateTimeField(auto_now_add=True)
 

@@ -12,7 +12,7 @@ class ReporterDetailView(DetailView):
 class ArticleListView(ListView):
     model = Article
     template_name = 'cityclub/article_list.html'
-    ordering = ['-pub_date']
+    ordering = ['-publication_date']
 
 class ArticleDetailView(DetailView):
     model = Article
